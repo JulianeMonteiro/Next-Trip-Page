@@ -417,28 +417,336 @@ footer > p {
   border-top: 1px solid var(--cor-input);
 }
 
-@media (min-width: 721px) and (max-width: 1200px) {
-  .panel-section .container {
-    margin: 10% auto;
-    width: 100vw;
+@media (min-width: 1060px) and (max-width: 1500px) {
+  .nav .container {
+    padding: 20px 10px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .travel-date input {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 20px;
+  }
+
+  .category-image img {
+    height: 30vh;
   }
 }
 
-@media (min-width: 481px) and (max-width: 720px) {
-  .panel-section .container {
-    margin: 15% auto;
-    width: 100vw;
+@media (min-width: 1053px) and (max-width: 1250px) {
+  section {
+    width: 100%;
+  }
+
+  .panel {
+    margin: 25px 10px 0 10px;
+  }
+
+  .panel {
+    height: 60vh;
+  }
+
+  .travel-date {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .travel-date div {
+    padding: 25px 0;
+  }
+
+  .travel-date input {
+    padding: 8px;
+    margin: 5px 5px 5px 20px;
+  }
+
+  .category-image img {
+    height: 22vh;
   }
 }
 
-@media (max-width: 480px) {
-  .panel-section .container {
-    margin: 30% auto;
-    width: 100vw;
+@media (min-width: 901px) and (max-width: 1052px) {
+  section {
+    width: 100%;
+  }
+
+  .panel {
+    margin: 25px 10px 0 10px;
+  }
+
+  .panel {
+    height: 60vh;
+  }
+
+  .travel-date {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .travel-date div {
+    padding: 25px 0;
+  }
+
+  .travel-date input {
+    padding: 8px;
+  }
+
+  footer,
+  .newsletter,
+  .more-packages,
+  .accommodation {
+    width: 90vw;
+  }
+
+  .category-image img {
+    height: 22vh;
+  }
+}
+@media (min-width: 820px) and (max-width: 900px) {
+  section {
+    width: 100%;
+  }
+
+  .panel {
+    margin: 35px 10px 0 10px;
+  }
+
+  .panel {
+    height: 55vh;
+  }
+
+  .travel-date {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .travel-date div {
+    padding: 25px 0;
+  }
+
+  .travel-date input {
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+
+  footer,
+  .newsletter,
+  .more-packages,
+  .accommodation {
+    width: 90vw;
+  }
+
+  .card > img {
+    height: 13vh;
+  }
+
+  .category-image img {
+    height: 18vh;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 819px) {
+  section {
+    width: 100%;
+  }
+
+  .panel {
+    margin: 40px 10px 0 10px;
+  }
+
+  .panel {
+    height: 55vh;
+  }
+
+  .travels .container h2 {
+    font-size: 2em;
+    margin: 50px 0;
+  }
+
+  .travel-date {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .travel-date div {
+    padding: 25px 0;
+  }
+
+  .travel-date form {
+    display: block;
+    text-align: center;
+  }
+
+  .travel-date input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .travel-date button {
+    width: 60%;
+    text-align: center;
+  }
+
+  footer,
+  .newsletter,
+  .more-packages,
+  .accommodation {
+    width: 90vw;
+  }
+
+  .card,
+  .category-image {
+    margin-bottom: 30px;
+  }
+
+  .category-image img {
+    height: 25vh;
+  }
+
+  .cards-images {
+    display: grid;
+    grid-template-columns: repeat(2, 49.5%);
+    column-gap: 2%;
+    width: 90vw;
+  }
+
+  .subscribe input {
+    padding: 10px 200px 10px 15px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe button {
+    padding: 10px 25px;
+  }
+
+  .social-network img {
+    padding: 5px;
+  }
+
+  .apps img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  section {
+    width: 100%;
+  }
+
+  .nav.active .container {
+    padding: 10px 35px 10px 20px;
+  }
+
+  .nav .container {
+    padding: 10px 35px 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .panel {
+    margin: 60px 10px 0 10px;
+  }
+
+  .panel {
+    height: 45vh;
   }
 
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
     display: none;
+  }
+
+  .panel h3 {
+    font-size: 16px;
+  }
+
+  .travels .container h2 {
+    font-size: 1.7em;
+    margin: 50px 0;
+  }
+
+  .travel-date {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .travel-date div {
+    padding: 25px 0;
+  }
+
+  .travel-date form {
+    display: block;
+    text-align: center;
+  }
+
+  .travel-date input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .travel-date button {
+    width: 60%;
+    text-align: center;
+  }
+
+  .more-packages,
+  .newsletter,
+  .accommodation,
+  footer {
+    width: 90vw;
+  }
+
+  .more-packages button,
+  .accommodation button {
+    width: 180px;
+    padding: 8px;
+  }
+
+  .more-packages h3,
+  .accommodation h3 {
+    font-size: 1.1em;
+  }
+
+  .card,
+  .category-image {
+    margin-bottom: 30px;
+  }
+
+  .cards-images {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    width: 90vw;
+  }
+  .newsletter h3 {
+    font-size: 1.6em;
+  }
+  .subscribe input {
+    padding: 8px 35px 8px 15px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe button {
+    padding: 8px 25px;
+  }
+
+  .footer-flex,
+  .icons {
+    flex-direction: column;
+  }
+
+  .footer-flex div {
+    text-align: center;
+  }
+  .social-network img {
+    padding: 5px;
+  }
+
+  .apps img {
+    width: 120px;
   }
 }

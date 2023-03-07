@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --cor-principal: #222;
+  --cor-secundaria: #fe5e4c;
+  --branco: #fff;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --fonte-principal: "Muli", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--branco);
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.register .container {
+  background-color: var(--branco);
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 10px 1px var(--color-shadow);
+}
+
+.register .container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register .container a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: var(--cor-secundaria);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--cor-principal);
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: var(--cor-principal);
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: var(--cor-secundaria);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: var(--cor-secundaria);
+  transform: translateY(-30px);
+}
+
+@media (max-width: 400px) {
+  .register {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .register .container {
+    max-width: 80%;
+  }
+  .form-control input {
+    display: block;
+    width: 80%;
+    padding: 15px 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 1500px) {
+  .register {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .register .container {
+    max-width: 80%;
+  }
+  .form-control input {
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
