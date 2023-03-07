@@ -109,27 +109,6 @@ body {
   transform: translateY(-30px);
 }
 
-@media (max-width: 400px) {
-  .register {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-  }
-
-  .register .container {
-    max-width: 80%;
-  }
-  .form-control input {
-    display: block;
-    width: 7 0%;
-    padding: 15px 0;
-  }
-
-  .text {
-    text-align: center;
-  }
-}
-
 @media (min-width: 401px) and (max-width: 1500px) {
   .register {
     display: flex;
@@ -143,6 +122,27 @@ body {
   .form-control input {
     display: block;
     width: 90%;
+    padding: 15px 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .register {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .register .container {
+    max-width: 80%;
+  }
+  .form-control input {
+    display: block;
+    width: 70%;
     padding: 15px 0;
   }
 
