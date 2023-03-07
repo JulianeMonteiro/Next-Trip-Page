@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
+:root {
+  --cor-principal: #222;
+  --cor-secundaria: #fe5e4c;
+  --cor-terciaria: #fff6ed;
+  --cor-quaternaria: #e8e6e6;
+  --hover-button: #e74b3a;
+  --cor-input: #666;
+  --branco: #fff;
+  --preto: #000;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --fonte-principal: "Muli", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +20,13 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: var(--fonte-principal);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
   margin: 0;
-  color: #222;
+  color: var(--cor-principal);
   padding-bottom: 50px;
 }
 
@@ -21,12 +34,12 @@ body {
 
 .nav {
   position: fixed;
-  z-index: 9;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
-  background-color: #222;
+  background-color: var(--cor-principal);
 }
 
 .nav .container {
@@ -45,15 +58,15 @@ body {
 }
 
 .nav a {
-  color: #fff;
+  color: var(--branco);
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .nav.active {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--branco);
+  box-shadow: 0 0.5px 10px 1px var(--color-shadow);
 }
 
 .nav.active a {
@@ -66,7 +79,7 @@ body {
 
 .nav a.current,
 .nav a:hover {
-  color: #c0392b;
+  color: var(--cor-secundaria);
   font-weight: bold;
 }
 
@@ -84,17 +97,17 @@ body {
 }
 
 .panel {
-  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #fff;
+  color: var(--branco);
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
-  transition: all 700ms ease-in;
+  position: relative;
+  -webkit-transition: all 500ms ease-in;
 }
 
 .panel h3 {
@@ -114,10 +127,294 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+/* SECTIONS CARDS*/
 
-.teste .container {
+section a {
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+section a:hover {
+  color: var(--hover-button);
+}
+
+.travel-date div {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cor-quaternaria);
+  padding: 25px;
+}
+
+.travel-date h2 {
+  padding-bottom: 24px;
+}
+
+.travel-date input {
+  padding: 10px 130px 5px 10px;
+  outline: none;
+}
+
+.travel-date input {
+  border-radius: 8px;
+  border: 1px solid var(--cor-input);
+}
+
+.travel-date button {
+  border-radius: 8px;
+  border: 1px solid var(--cor-secundaria);
+}
+
+.more-packages button,
+.accommodation button {
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  color: var(--branco);
+}
+
+.travel-date button {
+  padding: 10px;
+  background-color: var(--hover-button);
+  color: var(--branco);
+}
+
+.travel-date button:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.more-packages button,
+.accommodation button {
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 8px;
+  color: var(--cor-secundaria);
+  background-color: var(--branco);
+  font-weight: bold;
+}
+
+.more-packages button:hover,
+.accommodation button:hover {
+  background-color: var(--hover-button);
+  color: var(--branco);
+}
+
+.travels .container {
+  text-align: center;
   width: 90vw;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+
+.more-packages,
+.accommodation,
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.travels h2 {
+  padding: 5px 0 5px 0;
+  font-size: 2.5em;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.cards-images {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  column-gap: 2%;
+  width: 90vw;
+}
+
+.cards-images img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.cards-images li {
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.cards-images ul {
+  padding-bottom: 10px;
+}
+
+.cards-images small {
+  font-size: 0.7em;
+  padding-bottom: 5px;
+}
+
+.cards-images strong {
+  font-size: 1.2em;
+  color: var(--cor-secundaria);
+}
+
+.card {
+  box-shadow: -2px 2px 10px 1px var(--color-shadow);
+}
+
+.card-description,
+.accom-card {
+  padding: 0 0 7px 7px;
+}
+
+.accommodation,
+.category {
+  margin-top: 70px;
+}
+
+.accom-card span {
+  font-weight: bold;
+}
+
+.accom-card p {
+  padding-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.assessment p {
+  padding-bottom: 0;
+}
+
+.card-description h3,
+.accom-card h3,
+.calendar,
+.assessment {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.calendar,
+.assessment {
+  display: flex;
+  align-items: center;
+}
+
+.assessment span {
+  padding-left: 5px;
+}
+
+.calendar img,
+.assessment img {
+  width: 16px;
+  height: 16px;
+}
+
+.calendar p {
+  padding-left: 5px;
+}
+
+.category h3,
+.newsletter h3 {
+  font-size: 1.5em;
+}
+
+.category-image img {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  height: 45vh;
+}
+
+.category-image h3 {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 60px;
+  margin: 50px 0;
+  background-color: var(--hover-button);
+}
+
+.subscribe input {
+  border-radius: 4px;
+  border: 1px solid var(--hover-button);
+  padding: 15px 350px 16px 15px;
+  margin-right: 6px;
+  font-size: 1em;
+  background-color: var(--branco);
+}
+
+.subscribe button {
+  border-radius: 4px;
+  border: 1px solid var(--hover-button);
+  padding: 15px 35px;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--hover-button);
+  background-color: var(--branco);
+}
+
+.newsletter h3 {
+  padding-bottom: 40px;
+  font-size: 2em;
+  color: var(--branco);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.footer-flex p,
+.icons p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.footer-flex li {
+  list-style: none;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+.footer-flex a {
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+.footer-flex a:hover {
+  color: var(--hover-button);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.apps,
+.social-network {
+  text-align: center;
+}
+
+.apps img {
+  width: 160px;
+  justify-content: space-between;
+  margin: 0 3px 30px 3px;
+}
+
+.social-network img {
+  border-radius: 50%;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 0 3px 30px 3px;
+  background-color: var(--cor-quaternaria);
+}
+
+.social-network img:hover {
+  background-color: var(--cor-secundaria);
+}
+
+footer > p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9em;
+  color: var(--cor-input);
+  border-top: 1px solid var(--cor-input);
 }
 
 @media (min-width: 721px) and (max-width: 1200px) {
