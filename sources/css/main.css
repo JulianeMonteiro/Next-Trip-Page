@@ -5,7 +5,7 @@
   --cor-secundaria: #fe5e4c;
   --cor-terciaria: #fff6ed;
   --cor-quaternaria: #e8e6e6;
-  --hover-button: #e74b3a;
+  --laranja-secundario: #e74b3a;
   --cor-input: #666;
   --branco: #fff;
   --preto: #000;
@@ -135,7 +135,7 @@ section a {
 }
 
 section a:hover {
-  color: var(--hover-button);
+  color: var(--laranja-secundario);
 }
 
 .travel-date div {
@@ -173,12 +173,12 @@ section a:hover {
 
 .travel-date button {
   padding: 10px;
-  background-color: var(--hover-button);
+  background-color: var(--laranja-secundario);
   color: var(--branco);
 }
 
-.travel-date button:hover {
-  background-color: var(--cor-secundaria);
+.travel-date button:active {
+  transform: scale(0.98);
 }
 
 .more-packages button,
@@ -190,10 +190,9 @@ section a:hover {
   font-weight: bold;
 }
 
-.more-packages button:hover,
-.accommodation button:hover {
-  background-color: var(--hover-button);
-  color: var(--branco);
+.more-packages button:active,
+.accommodation button:active {
+  transform: scale(0.98);
 }
 
 .travels .container {
@@ -325,12 +324,12 @@ section a:hover {
   text-align: center;
   padding: 60px;
   margin: 50px 0;
-  background-color: var(--hover-button);
+  background-color: var(--laranja-secundario);
 }
 
 .subscribe input {
   border-radius: 4px;
-  border: 1px solid var(--hover-button);
+  border: 1px solid var(--laranja-secundario);
   padding: 15px 350px 16px 15px;
   margin-right: 6px;
   font-size: 1em;
@@ -339,12 +338,16 @@ section a:hover {
 
 .subscribe button {
   border-radius: 4px;
-  border: 1px solid var(--hover-button);
+  border: 1px solid var(--laranja-secundario);
   padding: 15px 35px;
   font-weight: bold;
   font-size: 1em;
-  color: var(--hover-button);
+  color: var(--laranja-secundario);
   background-color: var(--branco);
+}
+
+.subscribe button:active {
+  transform: scale(0.98);
 }
 
 .newsletter h3 {
@@ -378,7 +381,7 @@ section a:hover {
 }
 
 .footer-flex a:hover {
-  color: var(--hover-button);
+  color: var(--laranja-secundario);
 }
 
 .icons {
