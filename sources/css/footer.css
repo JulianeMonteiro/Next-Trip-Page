@@ -1,0 +1,63 @@
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.footer-flex p,
+.icons p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.footer-flex li {
+  list-style: none;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+.footer-flex a {
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+.footer-flex a:hover {
+  color: var(--laranja-secundario);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.apps,
+.social-network {
+  text-align: center;
+}
+
+.apps img {
+  width: 160px;
+  justify-content: space-between;
+  margin: 0 3px 30px 3px;
+}
+
+.social-network img {
+  border-radius: 50%;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 0 3px 30px 3px;
+  background-color: var(--cor-quaternaria);
+}
+
+.social-network img:hover {
+  background-color: var(--cor-secundaria);
+}
+
+footer > p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9em;
+  color: var(--cor-input);
+  border-top: 1px solid var(--cor-input);
+}

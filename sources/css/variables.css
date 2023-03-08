@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --cor-principal: #222;
+  --cor-secundaria: #fe5e4c;
+  --cor-terciaria: #fff6ed;
+  --cor-quaternaria: #e8e6e6;
+  --laranja-secundario: #e74b3a;
+  --cor-input: #666;
+  --branco: #fff;
+  --preto: #000;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --fonte-principal: "Muli", sans-serif;
+}
