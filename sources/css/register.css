@@ -95,11 +95,12 @@ body {
   transform: translateY(-30px);
 }
 
+
 @media (min-width: 821px) and (max-width: 1500px) {
   .register {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 0 auto;
   }
 
   .register .container {
@@ -107,7 +108,7 @@ body {
   }
   .form-control input {
     display: block;
-    width: 90%;
+    width: 70%;
     padding: 15px 0;
   }
 }
